@@ -1,51 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>snUAEkerhead</title>
-  <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-      background: #000;
-    }
-
-    /* Create a stacking context */
-    body {
-      position: relative;
-      overflow: hidden;
-    }
-
-    #bg-image {
-      position: fixed;           /* fixed is great for full-screen backgrounds */
-      inset: 0;                  /* shorthand for top/left/right/bottom: 0 */
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;                /* not negative */
-      animation: slowMove 30s ease-in-out infinite alternate;
-      display: block;            /* avoids inline img quirks */
-    }
-
-    @keyframes slowMove {
-      0% { transform: scale(1.1) translate(0, 0); }
-      33% { transform: scale(1.15) translate(-2%, 1%); }
-      66% { transform: scale(1.15) translate(2%, -1%); }
-      100% { transform: scale(1.1) translate(0, 0); }
-    }
-
-    .overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.2);
-      pointer-events: none;
-      z-index: 1;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tephra Global — Distinct ventures. Shared ground.</title>
+  <meta name="description" content="Tephra Global is the holding company for Arc Signal, K MEANS AI, and snUAEkerhead. Explore our ventures in technology, artificial intelligence, and streetwear.">
+  <meta name="theme-color" content="#fafaf9">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <link rel="canonical" href="https://tephra.global/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tephra Global">
+  <meta property="og:title" content="Tephra Global — Distinct ventures. Shared ground.">
+  <meta property="og:description" content="A family of ventures in technology, artificial intelligence, and streetwear. Explore Arc Signal, K MEANS AI, and snUAEkerhead.">
+  <meta property="og:url" content="https://tephra.global/">
+  <meta property="og:image" content="https://tephra.global/assets/images/tephra-social.jpg">
+  <meta property="og:image:alt" content="A white volcanic landscape of snow-covered peaks and pale ash ridges.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/tephra-mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body>
-  <img id="bg-image" src="images/snUAEkerhead.png" alt="Background image">
-  <div class="overlay"></div>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header shell">
+    <a class="brand-mark" href="#top" aria-label="Tephra Global home">Tephra Global</a>
+    <nav aria-label="Primary navigation">
+      <a href="#ventures">Our ventures</a>
+      <a href="#our-name">Our name</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">An independent holding company</p>
+        <h1 id="hero-title">Distinct ventures.<br>Shared ground.</h1>
+        <p class="hero-summary">Tephra Global brings together Arc Signal, <span class="keep-together">K MEANS AI</span>, and snUAEkerhead. Three ventures exploring technology, intelligence, and culture in their own way.</p>
+        <a class="text-link hero-link" href="#ventures">Explore our ventures <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-landscape">
+        <picture>
+          <source type="image/webp" srcset="assets/images/tephra-landscape-800.webp 800w, assets/images/tephra-landscape-1440.webp 1440w" sizes="(max-width: 900px) 100vw, 58vw">
+          <img src="assets/images/tephra-landscape-1440.webp" width="1440" height="960" alt="A pale volcanic crater, surrounded by snow-covered peaks and finely textured ash ridges." fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+    </section>
+
+    <section class="ventures shell" id="ventures" aria-labelledby="ventures-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The Tephra family</p>
+          <h2 id="ventures-title">Our ventures.</h2>
+        </div>
+        <p class="section-summary">Different disciplines.<br> The same independent spirit.</p>
+      </div>
+      <div class="venture-list">
+        <article class="venture" aria-labelledby="arc-title">
+          <div class="venture-identity">
+            <span class="venture-number" aria-hidden="true">01</span>
+            <div>
+              <p class="eyebrow">Everyday technology</p>
+              <h3 id="arc-title">Arc Signal</h3>
+            </div>
+          </div>
+          <p class="venture-description">Privacy-minded tools that make everyday security awareness more approachable, helping people better understand their surroundings.</p>
+          <a class="venture-link" href="https://arcsignal.app/" aria-label="Visit Arc Signal at arcsignal.app"><span>arcsignal.app</span><span class="outward-arrow" aria-hidden="true">↗</span></a>
+        </article>
+        <article class="venture" aria-labelledby="kmeans-title">
+          <div class="venture-identity">
+            <span class="venture-number" aria-hidden="true">02</span>
+            <div>
+              <p class="eyebrow">Artificial intelligence</p>
+              <h3 id="kmeans-title">K MEANS AI</h3>
+            </div>
+          </div>
+          <p class="venture-description">Research and software for more reliable AI reasoning. Bringing models together to challenge assumptions and produce reviewable results.</p>
+          <a class="venture-link" href="https://kmeans.ai/" aria-label="Visit K MEANS AI at kmeans.ai"><span>kmeans.ai</span><span class="outward-arrow" aria-hidden="true">↗</span></a>
+        </article>
+        <article class="venture" aria-labelledby="snuaekerhead-title">
+          <div class="venture-identity">
+            <span class="venture-number" aria-hidden="true">03</span>
+            <div>
+              <p class="eyebrow">Streetwear &amp; culture</p>
+              <h3 id="snuaekerhead-title">snUAEkerhead</h3>
+            </div>
+          </div>
+          <p class="venture-description">Independent streetwear rooted in the UAE, informed by sneaker culture, travel, and design. A different perspective on what we wear.</p>
+          <a class="venture-link" href="https://snuaekerhead.ae/" aria-label="Visit snUAEkerhead at snuaekerhead.ae"><span>snuaekerhead.ae</span><span class="outward-arrow" aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="origin shell" id="our-name" aria-labelledby="origin-title">
+      <div class="origin-heading">
+        <p class="eyebrow">Our name</p>
+        <h2 id="origin-title">From one source,<br>new possibilities.</h2>
+      </div>
+      <div class="origin-copy">
+        <p class="definition"><dfn>Tephra</dfn><span class="pronunciation">/ˈtefrə/ · noun</span></p>
+        <p>Rock fragments and particles cast into the air by a volcanic eruption.</p>
+        <p class="origin-note">Distinct pieces, a common origin. Our name reflects a family of ventures, each with its own identity and room to take shape.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <a class="brand-mark" href="#top" aria-label="Tephra Global, back to top">Tephra Global</a>
+    <p>© 2026 Tephra Global</p>
+    <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
 </body>
 </html>
