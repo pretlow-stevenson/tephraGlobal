@@ -35,3 +35,9 @@ Lighting: diffuse luminous winter daylight, soft shadows, serene and expansive.
 Palette: white, off-white, light silver-gray, very small amounts of medium cool gray. No blue sky, no saturated colors, no orange lava, no black background.
 No typography, text, people, buildings, roads, logos, frames, or watermarks. This is artwork only, not a website mockup.
 ```
+
+## Favicon
+
+The favicon is a native SVG volcano outline with a broad, open crater and a 2.25-unit stroke on a 32-unit canvas. A fixed warm-white tile keeps the charcoal mark legible on light and dark browser tabs. It replaces the initial mountain placeholder.
+
+`assets/images/tephra-mark.svg` is the source. Raster exports are `assets/images/tephra-favicon-32.png` (32px), `assets/images/apple-touch-icon.png` (180px, opaque), and `/favicon.ico` (individually rendered 16px, 32px, and 48px PNG frames). All head references use `v=2` to refresh the previously cached icon. Previewed at actual 16px and 32px sizes before publication.
